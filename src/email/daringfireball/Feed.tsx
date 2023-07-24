@@ -24,7 +24,6 @@ export default ({ feed }: Props) => {
           
           <Container key={item.guid ?? item.id} style={section}>
             <Text style={title}>
-              {item.description}
               <Link style={titleLink} href={href}>
                 {item.title}
               </Link>
