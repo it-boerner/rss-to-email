@@ -21,6 +21,7 @@ export default ({ feed }: Props) => {
       {feed.items.map((item) => {
         const href = parseLinks(item.links)
         return (
+          
           <Container key={item.guid ?? item.id} style={section}>
             <Text style={title}>
               {item.description}
